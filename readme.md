@@ -19,3 +19,6 @@ example-bluetooth.md  how to run the example bluetooth scanner
 example-rotate.md     how to run the servo rotate example
 
 adafruit-feather      setup and code for the beacon transmitter on the Adafruit Feather 32u4 Bluefruit LE
+
+beacon-detect.py      example to detect our feather beacon
+beacon-servo.py       example to detect and feather beacon and turn the servo left
