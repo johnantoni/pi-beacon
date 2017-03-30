@@ -41,6 +41,9 @@ blescan.hci_enable_le_scan(sock)
 
 # listen for beacons, returning if we see the beacon
 # interference is how far or near the beacon is, -62 = near, -90 = far
+# here if interference is greater than or equal to -62 (near the pi) the servo will move
+# were using the flag variable, so once we find the beacon we move the servo and set the
+# flag to true, making sure we won't turn the servo again
 
 flag = False
 
