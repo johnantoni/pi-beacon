@@ -10,7 +10,7 @@ pi = pigpio.pi()
 pi.set_mode(LED_PIN, pigpio.OUTPUT)
 
 pi.set_servo_pulsewidth(LED_PIN, 500)
-time.sleep(1)
+time.sleep(7)
 pi.set_servo_pulsewidth(LED_PIN, 2500)
 time.sleep(1)
 

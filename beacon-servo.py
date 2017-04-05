@@ -18,7 +18,7 @@ pi.set_mode(LED_PIN, pigpio.OUTPUT)
 def moveservo():
 	# use a flag so we only move the servo left/right once
 	pi.set_servo_pulsewidth(LED_PIN, 500)
-	time.sleep(1)
+	time.sleep(7)
 	pi.set_servo_pulsewidth(LED_PIN, 2500)
 	time.sleep(1)
 	#cleanup
@@ -51,10 +51,10 @@ while True:
 	returnedList = blescan.parse_events(sock, 10)
 	print "----------"
 	for beacon in returnedList:
-        if '0112233445566778899aabbccddeeff0' in beacon:
-            print "found feather beacon"
+        	if '0112233445566778899aabbccddeeff0' in beacon:
+            		print "found feather beacon"
 			interference = beacon[-3:]
-            print "interference " + interference
-				if flag == False and int(interference)>=-62:
-					flag = True
-					moveservo()
+            		print "interference " + interference
+			if flag == False and int(interference)>=-62:
+				flag = True
+				moveservo()
