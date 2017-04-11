@@ -25,6 +25,6 @@ while True:
 	returnedList = blescan.parse_events(sock, 10)
 	print "----------"
 	for beacon in returnedList:
-        if '0112233445566778899aabbccddeeff0' in beacon:
-            print "found feather beacon"
-            print "interference " + beacon[-3:]
+            if '0112233445566778899aabbccddeeff0' in beacon:
+                print "found feather beacon"
+                print "interference " + beacon[-3:]
