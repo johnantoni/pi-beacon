@@ -13,6 +13,8 @@
  * copyleft 2005 DojoDave <http://www.0j0.org>
  * http://arduino.berlios.de
  *
+ *
+ * REMEMBER: LONG LEG OF LED CONNECTED TO DIGITAL PIN, SHORT CONNECTED TO GROUND
  */
 
 int ledPin = 11; // choose the pin for the LED
